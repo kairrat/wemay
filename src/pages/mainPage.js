@@ -2,6 +2,8 @@ import React from 'react'
 import { Button } from '../components/Button'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
+import Categories from '../components/Categories'
+import Slider from '../components/Slider'
 
 
 
@@ -14,6 +16,8 @@ export default function MainPage() {
             <div className='flex flex-col   '>
       <Banner/>
       <Header/>
+      <Categories/>
+    <Slider/>
       </div>
       
 
