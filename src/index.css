@@ -13,3 +13,133 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.pagination {
+  display: flex;
+}
+
+/* Стили для общего вида пагинации */
+.page-item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.page-link {
+  padding: 10px;
+  border-radius: 5px;
+  color: #000; /* Цвет цифр */
+  text-decoration: none;
+}
+
+.page-link:hover {
+  background-color: #089449; /* Цвет фона при наведении на цифры */
+  color: #fff;
+}
+
+/* Стили для стрелок */
+.pagination li {
+  /* Стили для элементов списка (цифры и стрелки) */
+}
+
+.pagination li a {
+  /* Стили для ссылок внутри элементов списка */
+  background-color: #F3F3F3; /* Цвет фона для стрелок */
+  color: #000; /* Цвет текста для стрелок */
+  border-radius: 56px;
+
+}
+
+.pagination li a:hover {
+  background-color: #089449; /* Цвет фона при наведении на стрелки */
+  color: #fff;
+}
+/* styles.css (или ваш файл со стилями) */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  outline: none;
+  borderRadius: 8px;
+  maxWidth: 80%;
+  max-height: 80%; /* Ограничение высоты модального окна */
+  overflow-y: auto; /* Включение вертикальной прокрутки, если контент превышает высоту */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Запрет прокрутки за пределами модального окна */
+}
+
+
+
+
+
+
+
+/* styles.css (или ваш файл со стилями) */
+
+.registration-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  outline: none;
+  borderRadius: 8px;
+  width: 600px;
+  height: 653px;
+  overflow: hidden;
+}
+
+.registration-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-login button {
+  margin: 10px;
+}

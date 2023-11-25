@@ -35,12 +35,12 @@ const Sidebar = () => {
   ]
 
   return (
-    <div className={` ${isOpen ? ' absolute   left-0 top-0 h-[100%] w-[360px] shadow-lg hover:shadow-xl  z-50 bg-[#fff]  mb-8 ' : 'z-50 '}`}>
+    <div className={` ${isOpen ? ' absolute   left-0 top-0 h-inherit  w-[360px] shadow-lg hover:shadow-xl  z-50 bg-[#fff]  mb-8 ' : 'z-50 '}`}>
       <button onClick={toggleSidebar} className={`${isOpen ? "absolute right-0 " : ' w-[32px] h-[32px] `'}`}>
         <img src={isOpen ?closeIcon  :sideBarIcon } alt='sidebar' />
       </button>
       {isOpen && (
-        <div className='flex flex-col  '>
+        <div className='flex flex-col h-full  '>
              <div className="flex flex-col justify-center px-[32px] w-[310px] ">
         <button className=" flex text-base mt-[24px] border-b-[1px] border-solid border-[#D7D7D7] ">Главная</button>
         <button className="flex text-base  mt-[24px] border-b-[1px] border-solid border-[#D7D7D7]">О нас</button>

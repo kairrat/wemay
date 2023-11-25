@@ -11,6 +11,8 @@ import brand3 from '../assets/images/brand3.png'
 import brand4 from '../assets/images/brand4.png'
 import brand5 from '../assets/images/brand5.png'
 import brand6 from '../assets/images/brand6.png'
+import DiscountPagination from '../components/DiscountPagination'
+import Footer from '../components/Footer'
 
 
 
@@ -35,20 +37,18 @@ export default function MainPage() {
 
 
   return (
-    <div className=' w-[100vw] h-[100vh]'>
+    <div className=' w-[100vw] h-[100%]'>
 
-        <div className=' max-w-[1440px] flex mx-auto  '>
+        <div className=' max-w-[1440px] h-full flex mx-auto  '>
             <div className='flex flex-col   '>
       <Banner/>
       <Header/>
       <Categories/>
       <Slider slides={slides}/>
       <CompanySlider companiesSlides={compSlides} />
-
-
+      <DiscountPagination/>
+      <Footer/>
       </div>
-      
-
         </div>
       
     </div>

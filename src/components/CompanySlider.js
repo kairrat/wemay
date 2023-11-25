@@ -24,7 +24,7 @@ const CompanySlider = ({ companiesSlides }) => {
     };
   
     return (
-      <div className="flex flex-col max-w-[1444px] relative">
+      <div className="flex flex-col max-w-[1444px] relative ">
         <h1 className="font-bold text-2xl text-[#333] ml-[9rem] mt-[3.75rem]">Компании</h1>
   
         <div className=" overflow-hidden mt-4 mx-auto">

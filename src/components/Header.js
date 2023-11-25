@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from './SideBar'
 import logo from '../assets/icons/wemay.svg'
 import search from '../assets/icons/search.svg'
 import user from '../assets/icons/user.svg'
 
 import { Button } from './Button'
+import RegistrationModal from './RegModal'
 
 
 
 export default function Header() {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+    console.log()
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
   return (
     <div className='flex justify-center h-[111px] px-[150px] flex justify-center items-center bg-[#F3F3F3] z-10   '>
         <Sidebar/>
@@ -27,7 +39,9 @@ export default function Header() {
 
 
         </div>
-        <Button className={'border-[1px] ml-40 rounded-[100px] w-[127px] h-[53px] border-solid border-[#333]'} image={user} children={'Войти'} />
+        <Button onClick={openModal}className={'border-[1px] ml-40 rounded-[100px] w-[127px] h-[53px] border-solid border-[#333]'} image={user} children={'Войти'} />
+        <RegistrationModal isOpen={modalIsOpen} closeModal={closeModal} />
+
     </div>
   )
 }
