@@ -7,7 +7,7 @@ import img3 from '../assets/images/pag3.jpg'
 import img4 from '../assets/images/pag4.jpg'
 import img5 from '../assets/images/pag5.jpg'
 import img6 from '../assets/images/pag6.jpg'
-
+import '../index.css'
 
 export default function CardList() {
 
@@ -37,7 +37,7 @@ export default function CardList() {
       };
   return (
     <div>
-    <div className="flex flex-wrap">
+    <div className="my-container">
       {currentCards.map((data, index) => (
         <Card key={index} {...data} />
       ))}

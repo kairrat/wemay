@@ -2,7 +2,7 @@ import React from 'react';
 import likes from '../assets/icons/likes.svg'
 const Card = ({ ...data }) => {
   return (
-    <div className="w-1/2 p-4">
+    <div className="w-1/2 p-4 md:w-1/2">
       <div className="bg-white rounded-lg overflow-hidden relative h-[16rem] w-[33rem]">
         <img
           src={data.image}
