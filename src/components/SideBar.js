@@ -35,12 +35,12 @@ const Sidebar = () => {
   ]
 
   return (
-    <div className={` ${isOpen ? ' absolute   left-0 top-0 h-inherit  w-[360px] shadow-lg hover:shadow-xl  z-50 bg-[#fff]  mb-8 ' : 'z-50 '}`}>
-      <button onClick={toggleSidebar} className={`${isOpen ? "absolute right-0 " : ' w-[32px] h-[32px] `'}`}>
-        <img src={isOpen ?closeIcon  :sideBarIcon } alt='sidebar' />
+    <div className={` ${isOpen ? ' absolute   left-0 top-0 h-inherit  w-[360px] shadow-2xl    hover:shadow-4xl      z-50 bg-[#fff]  mb-8 ' : 'z-50 '}`}>
+      <button onClick={toggleSidebar} className={`${isOpen ? "absolute right-[-30px] top-2 " : ' w-[32px] h-[32px] `'}`}>
+        <img  src={isOpen ?closeIcon  :sideBarIcon } alt='sidebar' />
       </button>
       {isOpen && (
-        <div className='flex flex-col h-full  '>
+        <div className='flex flex-col relative  '>
              <div className="flex flex-col justify-center px-[32px] w-[310px] ">
         <button className=" flex text-base mt-[24px] border-b-[1px] border-solid border-[#D7D7D7] ">Главная</button>
         <button className="flex text-base  mt-[24px] border-b-[1px] border-solid border-[#D7D7D7]">О нас</button>
@@ -49,7 +49,7 @@ const Sidebar = () => {
      
       
       {items.map((item,index) => (
-     <div className=" flex justify-center mx-auto my-[0.5rem] relative" key={index}>
+     <div className=" flex justify-center mx-auto my-[0.5rem]  relative" key={index}>
      <div className="w-[310px] h-[149px] bg-gradient-to-r from-blue-500 to-blue-300 rounded-[12px]">
         <div className='flex flex-col absolute bottom-[1.3rem]'>
         <p>{item.title} </p>

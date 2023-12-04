@@ -4,6 +4,7 @@ import mapICon from '../assets/icons/map.svg'
 import Card from './Card'
 import CardList from './CardList'
 import MapModal from './mapModal'
+import '../index.css'
 export default function DiscountPagination() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -16,9 +17,9 @@ export default function DiscountPagination() {
       setModalIsOpen(false);
     };
   return (
-    <div className=' max-w-[1144px] ml-[9rem] mt-[3.75rem]'>
+    <div className=' max-w-[1144px]  mx-auto mt-[3.75rem]'>
         <h1 className='font-bold text-2xl text-[#333] '> Все акции</h1>
-        <div className='flex justify-between  '>     
+        <div className='pagination-btn '>     
         <select className='mt-[1rem] border-[1px] border-solid border-[#DDDDDF] px-auto py-[12px] rounded-lg text-center '>
             <option>
                 По умолчанию

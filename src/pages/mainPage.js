@@ -13,6 +13,8 @@ import brand5 from '../assets/images/brand5.png'
 import brand6 from '../assets/images/brand6.png'
 import DiscountPagination from '../components/DiscountPagination'
 import Footer from '../components/Footer'
+import '../index.css'
+import MainHeader from '../components/MainHeader'
 
 
 
@@ -37,13 +39,11 @@ export default function MainPage() {
 
 
   return (
-    <div className=' w-[100vw] h-[100%]'>
+    <div className='main_container'>
 
-        <div className=' max-w-[1440px] h-full flex mx-auto  '>
-            <div className='flex flex-col   '>
-      <Banner/>
-      <Header/>
-      <Categories/>
+        <div className='  h-full flex mx-auto'>
+            <div className=' container_pos'>
+      <MainHeader/>
       <Slider slides={slides}/>
       <CompanySlider companiesSlides={compSlides} />
       <DiscountPagination/>

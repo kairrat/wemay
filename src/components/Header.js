@@ -22,7 +22,7 @@ export default function Header() {
     setModalIsOpen(false);
   };
   return (
-    <div className='flex justify-center h-[111px] px-[150px] flex justify-center items-center bg-[#F3F3F3] z-10   '>
+    <div className='flex justify-center h-[111px]  items-center bg-[#F3F3F3]    '>
         <Sidebar/>
         <img className='w-[124px] h-[24px] ml-[24px] ' src={logo} alt='WEMAY'/>
         <div className='flex items-center  w-[578px] h-[51px] border-[1px] border-solid border-[#333333] rounded-[100px] ml-[100px]'>
@@ -39,7 +39,7 @@ export default function Header() {
 
 
         </div>
-        <Button onClick={openModal}className={'border-[1px] ml-40 rounded-[100px] w-[127px] h-[53px] border-solid border-[#333]'} image={user} children={'Войти'} />
+        <Button onClick={openModal}className={'border-[1px] ml-40 rounded-[100px] w-[127px] px-[24px] h-[53px] border-solid border-[#333]'} image={user} children={'Войти'} />
         <RegistrationModal isOpen={modalIsOpen} closeModal={closeModal} />
 
     </div>

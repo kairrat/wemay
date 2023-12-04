@@ -24,6 +24,14 @@ export default function CardList() {
     {discount: '15%', likes: 15,image: img2},
     {discount: '15%', likes: 15,image: img3},
     {discount: '15%', likes: 15,image: img1},
+    {discount: '15%', likes: 15,image: img2},
+    {discount: '15%', likes: 15,image: img4},
+    {discount: '15%', likes: 15,image: img5},
+    {discount: '15%', likes: 15,image: img3},
+    {discount: '15%', likes: 15,image: img2},
+    {discount: '15%', likes: 15,image: img1},
+    {discount: '15%', likes: 15,image: img5},
+    {discount: '15%', likes: 15,image: img3},
 
       ];
       const cardsPerPage = 6;
@@ -36,13 +44,13 @@ export default function CardList() {
         setActivePage(pageNumber);
       };
   return (
-    <div>
+    <div className=''>
     <div className="my-container">
       {currentCards.map((data, index) => (
         <Card key={index} {...data} />
       ))}
     </div>
-    <div className='flex justify-center flex-row' >
+    <div className='flex justify-center flex-row mb-[4rem] mt-[2rem]' >
     <Pagination
         activePage={activePage}
         itemsCountPerPage={cardsPerPage}
